@@ -11,78 +11,61 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="topbar">
-      <div class="shell topbar-inner">
-        <a class="back" href="../index.html#cardapio">← Voltar ao site</a>
-        <a class="brand" href="../index.html" aria-label="Hotel E Restaurante Aquarela, início"><small>Hotel E Restaurante</small>Aquarela</a>
+    <header class="topbar"><div class="shell topbar-inner"><a class="back" href="../index.html#cardapio">← Voltar ao site</a><a class="brand" href="../index.html" aria-label="Hotel E Restaurante Aquarela, início"><small>Hotel E Restaurante</small>Aquarela</a></div></header>
+
+    <main class="shell menu-page">
+      <section class="menu-intro"><p class="eyebrow">Restaurante Aquarela</p><h1>Cardápio</h1><p>Escolha uma categoria para conhecer as opções do restaurante.</p></section>
+
+      <div class="tabs">
+        <input checked id="tab-entradas" name="menu-category" type="radio" />
+        <input id="tab-principais" name="menu-category" type="radio" />
+        <input id="tab-bebidas" name="menu-category" type="radio" />
+        <input id="tab-sobremesas" name="menu-category" type="radio" />
+        <input id="tab-cafeteria" name="menu-category" type="radio" />
+
+        <nav class="tab-list" aria-label="Categorias do cardápio">
+          <label for="tab-entradas">Entradas</label><label for="tab-principais">Pratos principais</label><label for="tab-bebidas">Bebidas</label><label for="tab-sobremesas">Sobremesas</label><label for="tab-cafeteria">Cafeteria</label>
+        </nav>
+
+        <section class="tab-panel panel-entradas" aria-label="Entradas"><div class="panel-heading"><p>01</p><h2>Entradas</h2></div><div class="item-grid">
+          <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Casquinha de siri</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article>
+          <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Casquinha de costela</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article>
+          <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Espetinho de camarão</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article>
+          <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Espeto de alcatra</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article>
+          <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Frutos do mar</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article>
+        </div></section>
+
+        <section class="tab-panel panel-principais" aria-label="Pratos principais"><div class="panel-heading"><p>02</p><h2>Pratos principais</h2></div><div class="item-grid">
+          <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Filé de pescada</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article>
+          <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Filé de frango</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article>
+          <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Peixe grelhado ou empanado</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article>
+          <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Churrasco de alcatra</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article>
+          <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Paella</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article>
+          <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Espaguete de frutos do mar</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article>
+        </div></section>
+
+        <section class="tab-panel panel-bebidas" aria-label="Bebidas"><div class="panel-heading"><p>03</p><h2>Bebidas</h2></div><div class="drink-accordions">
+          <details open><summary>Caipirinhas <b>+</b></summary><div class="drink-content item-grid"><article class="menu-card"><div class="dish-placeholder"><span>Foto futura</span></div><h3>Caipirinha</h3><p>Sabores e doses em breve.</p><strong>R$ 29,90</strong></article></div></details>
+          <details><summary>Cervejas <b>+</b></summary><div class="drink-content item-grid"><article class="menu-card"><div class="dish-placeholder"><span>Foto futura</span></div><h3>Brahma Duplo Malte</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article><article class="menu-card"><div class="dish-placeholder"><span>Foto futura</span></div><h3>Skol</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article><article class="menu-card"><div class="dish-placeholder"><span>Foto futura</span></div><h3>Original</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article></div></details>
+          <details><summary>Batidas <b>+</b></summary><div class="drink-content item-grid"><article class="menu-card"><div class="dish-placeholder"><span>Foto futura</span></div><h3>Batida</h3><p>Sabores e opções em breve.</p><strong>R$ 29,90</strong></article></div></details>
+          <details><summary>Doses <b>+</b></summary><div class="drink-content"><article class="dose-card"><div><h3>Dose</h3><p>Bebidas disponíveis em breve.</p></div><strong>R$ 29,90</strong></article></div></details>
+        </div></section>
+
+        <section class="tab-panel panel-sobremesas" aria-label="Sobremesas"><div class="panel-heading"><p>04</p><h2>Sobremesas</h2></div><div class="item-grid">
+          <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Banana split</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article>
+          <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Creme de papaia com licor</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article>
+        </div></section>
+
+        <section class="tab-panel panel-cafeteria" aria-label="Cafeteria"><div class="panel-heading"><p>05</p><h2>Café da manhã &amp; cafeteria</h2></div><div class="item-grid">
+          <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Café expresso</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article>
+          <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Café coado</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article>
+          <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Pão na chapa</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article>
+          <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Pão com ovo</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article>
+          <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Pão com ovos mexidos</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article>
+          <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Achocolatado (Nescau)</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article>
+        </div></section>
       </div>
-    </header>
-
-    <main>
-      <section class="menu-intro shell">
-        <p class="eyebrow">Restaurante Aquarela</p>
-        <h1>Cardápio</h1>
-        <p>Escolhas para bons encontros, do café da manhã ao último brinde.</p>
-      </section>
-
-      <nav class="menu-nav" aria-label="Navegação do cardápio"><div class="shell"><a href="#entradas">Entradas</a><a href="#principais">Pratos principais</a><a href="#bebidas">Bebidas</a><a href="#sobremesas">Sobremesas</a><a href="#cafeteria">Cafeteria</a></div></nav>
-
-      <section class="menu-columns shell" aria-label="Itens do cardápio">
-        <section class="menu-section" id="entradas">
-          <p class="section-number">01</p><h2>Entradas</h2>
-          <div class="dish-list">
-            <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Casquinha de siri</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20pedir%20uma%20Casquinha%20de%20siri." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article>
-            <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Casquinha de costela</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20pedir%20uma%20Casquinha%20de%20costela." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article>
-            <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Espetinho de camarão</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20pedir%20um%20Espetinho%20de%20camarão." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article>
-            <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Espeto de alcatra</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20pedir%20um%20Espeto%20de%20alcatra." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article>
-            <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Frutos do mar</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20saber%20sobre%20os%20Frutos%20do%20mar." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article>
-          </div>
-        </section>
-
-        <section class="menu-section" id="principais">
-          <p class="section-number">02</p><h2>Pratos<br />principais</h2>
-          <div class="dish-list">
-            <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Filé de pescada</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20pedir%20Filé%20de%20pescada." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article>
-            <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Filé de frango</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20pedir%20Filé%20de%20frango." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article>
-            <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Peixe grelhado ou empanado</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20saber%20sobre%20Peixe%20grelhado%20ou%20empanado." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article>
-            <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Churrasco de alcatra</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20pedir%20Churrasco%20de%20alcatra." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article>
-            <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Paella</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20pedir%20Paella." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article>
-            <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Espaguete de frutos do mar</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20pedir%20Espaguete%20de%20frutos%20do%20mar." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article>
-          </div>
-        </section>
-
-        <section class="menu-section" id="bebidas">
-          <p class="section-number">03</p><h2>Bebidas</h2>
-          <div class="accordions">
-            <details><summary>Caipirinhas <b>+</b></summary><div class="accordion-content"><article class="menu-card compact"><div class="dish-placeholder"><span>Foto futura</span></div><h3>Caipirinha</h3><p>Sabores e doses em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20saber%20os%20sabores%20de%20Caipirinha." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article></div></details>
-            <details><summary>Cervejas <b>+</b></summary><div class="accordion-content"><article class="menu-card compact"><div class="dish-placeholder"><span>Foto futura</span></div><h3>Brahma Duplo Malte</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20pedir%20Brahma%20Duplo%20Malte." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article><article class="menu-card compact"><div class="dish-placeholder"><span>Foto futura</span></div><h3>Skol</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20pedir%20Skol." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article><article class="menu-card compact"><div class="dish-placeholder"><span>Foto futura</span></div><h3>Original</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20pedir%20Original." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article></div></details>
-            <details><summary>Batidas <b>+</b></summary><div class="accordion-content"><article class="menu-card compact"><div class="dish-placeholder"><span>Foto futura</span></div><h3>Batida</h3><p>Sabores e opções em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20saber%20sobre%20as%20Batidas." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article></div></details>
-            <details><summary>Doses <b>+</b></summary><div class="accordion-content"><article class="menu-card compact"><div class="dish-placeholder"><span>Foto futura</span></div><h3>Dose</h3><p>Bebidas disponíveis em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20saber%20sobre%20as%20Doses." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article></div></details>
-          </div>
-        </section>
-
-        <section class="menu-section" id="sobremesas">
-          <p class="section-number">04</p><h2>Sobremesas</h2>
-          <div class="dish-list">
-            <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Banana split</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20pedir%20Banana%20split." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article>
-            <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Creme de papaia com licor</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20pedir%20Creme%20de%20papaia%20com%20licor." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article>
-          </div>
-        </section>
-
-        <section class="menu-section" id="cafeteria">
-          <p class="section-number">05</p><h2>Café da manhã<br />&amp; cafeteria</h2>
-          <div class="dish-list">
-            <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Café expresso</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20pedir%20Café%20expresso." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article>
-            <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Café coado</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20pedir%20Café%20coado." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article>
-            <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Pão na chapa</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20pedir%20Pão%20na%20chapa." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article>
-            <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Pão com ovo</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20pedir%20Pão%20com%20ovo." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article>
-            <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Pão com ovos mexidos</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20pedir%20Pão%20com%20ovos%20mexidos." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article>
-            <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Achocolatado (Nescau)</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong><a href="https://wa.me/5513997068488?text=Olá!%20Gostaria%20de%20pedir%20Achocolatado." target="_blank" rel="noreferrer">Pedir no WhatsApp</a></article>
-          </div>
-        </section>
-      </section>
     </main>
-
     <footer class="footer"><div class="shell"><span>Hotel E Restaurante Aquarela</span><span>Peruíbe, São Paulo</span></div></footer>
   </body>
 </html>
