@@ -1,1 +1,125 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>Cardápio | Restaurante Aquarela</title><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/><link rel="stylesheet" href="./style.css"/></head><body><header class="topbar"><div class="shell"><a class="back" href="../index.html#cardapio">← Voltar ao site</a><a class="brand" href="../index.html"><small>Hotel E Restaurante</small>Aquarela</a></div></header><main class="overview shell"><p class="eyebrow">Restaurante Aquarela</p><h1>Escolha um sabor<br/><em>para começar.</em></h1><div class="category-cards"><a class="category-card" href="./entradas.html"><img src="../assets/menu/entradas.jpg" alt="Porção de entradas"/><div><span>01</span><h2>Entradas <i>→</i></h2></div></a><a class="category-card" href="./pratos-principais.html"><img src="../assets/menu/pratos-principais.png" alt="Prato principal do restaurante"/><div><span>02</span><h2>Principais <i>→</i></h2></div></a><a class="category-card" href="./drinks.html"><img src="../assets/menu/doces-e-drinks.png" alt="Caipirinha de banana"/><div><span>03</span><h2>Drinks <i>→</i></h2></div></a><a class="category-card" href="./sobremesas.html"><img src="../assets/menu/sobremesas.png" alt="Sobremesa de banana caramelizada"/><div><span>04</span><h2>Sobremesas <i>→</i></h2></div></a><a class="category-card" href="./cafe-da-manha.html"><img src="../assets/menu/cafe-da-manha.png" alt="Mesa de café da manhã"/><div><span>05</span><h2>Café da manhã <i>→</i></h2></div></a></div></main><footer class="footer"><div class="shell"><span>Hotel E Restaurante Aquarela</span><span>Peruíbe, São Paulo</span></div></footer></body></html>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cardápio do Restaurante Aquarela em Peruíbe." />
+    <title>Cardápio | Hotel E Restaurante Aquarela</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="shell topbar-inner">
+        <a class="back" href="../index.html#cardapio">← Voltar ao site</a>
+        <a class="brand" href="../index.html" aria-label="Hotel E Restaurante Aquarela, início">
+          <small>Hotel E Restaurante</small>
+          Aquarela
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="menu-intro shell">
+        <p class="eyebrow">Restaurante Aquarela</p>
+        <h1>Cardápio</h1>
+        <p>Sabores para acompanhar bons encontros, do café da manhã ao último brinde.</p>
+      </section>
+
+      <nav class="menu-nav" aria-label="Navegação do cardápio">
+        <div class="shell">
+          <a href="#entradas">Entradas</a>
+          <a href="#principais">Pratos principais</a>
+          <a href="#bebidas">Bebidas</a>
+          <a href="#sobremesas">Sobremesas</a>
+          <a href="#cafeteria">Cafeteria</a>
+        </div>
+      </nav>
+
+      <section class="menu-columns shell" aria-label="Itens do cardápio">
+        <section class="menu-section" id="entradas">
+          <p class="section-number">01</p>
+          <h2>Entradas</h2>
+          <ul class="menu-list">
+            <li><span>Casquinha de siri</span><i></i></li>
+            <li><span>Casquinha de costela</span><i></i></li>
+            <li><span>Espetinho de camarão</span><i></i></li>
+            <li><span>Espeto de alcatra</span><i></i></li>
+            <li><span>Frutos do mar</span><i></i></li>
+          </ul>
+        </section>
+
+        <section class="menu-section" id="principais">
+          <p class="section-number">02</p>
+          <h2>Pratos<br />principais</h2>
+          <ul class="menu-list">
+            <li><span>Filé de pescada</span><i></i></li>
+            <li><span>Filé de frango</span><i></i></li>
+            <li><span>Peixe grelhado ou empanado</span><i></i></li>
+            <li><span>Churrasco de alcatra</span><i></i></li>
+            <li><span>Paella</span><i></i></li>
+            <li><span>Espaguete de frutos do mar</span><i></i></li>
+          </ul>
+        </section>
+
+        <section class="menu-section drinks-section" id="bebidas">
+          <p class="section-number">03</p>
+          <h2>Bebidas</h2>
+          <div class="accordions">
+            <details>
+              <summary>Caipirinhas <b>+</b></summary>
+              <div class="accordion-content">
+                <p>Sabores</p><p>Tipo de bebida utilizada</p><p>Tamanho ou quantidade da dose</p><p>Preço</p>
+              </div>
+            </details>
+            <details>
+              <summary>Cervejas <b>+</b></summary>
+              <div class="accordion-content">
+                <p>Brahma Duplo Malte</p><p>Skol</p><p>Original</p>
+              </div>
+            </details>
+            <details>
+              <summary>Batidas <b>+</b></summary>
+              <div class="accordion-content"><p>Sabores e opções disponíveis</p><p>Preço</p></div>
+            </details>
+            <details>
+              <summary>Doses <b>+</b></summary>
+              <div class="accordion-content"><p>Bebidas vendidas em dose</p><p>Preço</p></div>
+            </details>
+          </div>
+        </section>
+
+        <section class="menu-section" id="sobremesas">
+          <p class="section-number">04</p>
+          <h2>Sobremesas</h2>
+          <ul class="menu-list">
+            <li><span>Banana split</span><i></i></li>
+            <li><span>Creme de papaia com licor</span><i></i></li>
+          </ul>
+        </section>
+
+        <section class="menu-section" id="cafeteria">
+          <p class="section-number">05</p>
+          <h2>Café da manhã<br />&amp; cafeteria</h2>
+          <ul class="menu-list">
+            <li><span>Café expresso</span><i></i></li>
+            <li><span>Café coado</span><i></i></li>
+            <li><span>Pão na chapa</span><i></i></li>
+            <li><span>Pão com ovo</span><i></i></li>
+            <li><span>Pão com ovos mexidos</span><i></i></li>
+            <li><span>Achocolatado (Nescau)</span><i></i></li>
+          </ul>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell">
+        <span>Hotel E Restaurante Aquarela</span>
+        <span>Peruíbe, São Paulo</span>
+      </div>
+    </footer>
+  </body>
+</html>
