@@ -1,0 +1,8 @@
+.drink-card .drink-description { min-height: 30px; }
+.drink-card .option-label { min-height: 0; margin: 8px 0 5px; color: #8b7040; font-size: 9px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; }
+.product-options { display: flex; flex-wrap: wrap; gap: 5px; margin: 0; padding: 0; list-style: none; }
+.product-options li { border: 1px solid rgba(185, 154, 90, .36); border-radius: 99px; padding: 3px 7px; color: #5c6871; font-size: 9px; line-height: 1.2; }
+.dose-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 28px; padding: 0 0 22px; }
+.dose-card { padding: 16px 0; }
+.dose-card h3 { font-size: 25px; }
+@media (max-width: 600px) { .dose-list { grid-template-columns: 1fr; } }

@@ -9,23 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style-extra.css" />
   </head>
   <body>
     <header class="topbar"><div class="shell topbar-inner"><a class="back" href="../index.html#cardapio">← Voltar ao site</a><a class="brand" href="../index.html" aria-label="Hotel E Restaurante Aquarela, início"><small>Hotel E Restaurante</small>Aquarela</a></div></header>
-
     <main class="shell menu-page">
       <section class="menu-intro"><p class="eyebrow">Restaurante Aquarela</p><h1>Cardápio</h1><p>Escolha uma categoria para conhecer as opções do restaurante.</p></section>
-
       <div class="tabs">
         <input checked id="tab-entradas" name="menu-category" type="radio" />
         <input id="tab-principais" name="menu-category" type="radio" />
         <input id="tab-bebidas" name="menu-category" type="radio" />
         <input id="tab-sobremesas" name="menu-category" type="radio" />
         <input id="tab-cafeteria" name="menu-category" type="radio" />
-
-        <nav class="tab-list" aria-label="Categorias do cardápio">
-          <label for="tab-entradas">Entradas</label><label for="tab-principais">Pratos principais</label><label for="tab-bebidas">Bebidas</label><label for="tab-sobremesas">Sobremesas</label><label for="tab-cafeteria">Cafeteria</label>
-        </nav>
+        <nav class="tab-list" aria-label="Categorias do cardápio"><label for="tab-entradas">Entradas</label><label for="tab-principais">Pratos principais</label><label for="tab-bebidas">Bebidas</label><label for="tab-sobremesas">Sobremesas</label><label for="tab-cafeteria">Cafeteria</label></nav>
 
         <section class="tab-panel panel-entradas" aria-label="Entradas"><div class="panel-heading"><p>01</p><h2>Entradas</h2></div><div class="item-grid">
           <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Casquinha de siri</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article>
@@ -44,12 +40,7 @@
           <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Espaguete de frutos do mar</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article>
         </div></section>
 
-        <section class="tab-panel panel-bebidas" aria-label="Bebidas"><div class="panel-heading"><p>03</p><h2>Bebidas</h2></div><div class="drink-accordions">
-          <details open><summary>Caipirinhas <b>+</b></summary><div class="drink-content item-grid"><article class="menu-card"><div class="dish-placeholder"><span>Foto futura</span></div><h3>Caipirinha</h3><p>Sabores e doses em breve.</p><strong>R$ 29,90</strong></article></div></details>
-          <details><summary>Cervejas <b>+</b></summary><div class="drink-content item-grid"><article class="menu-card"><div class="dish-placeholder"><span>Foto futura</span></div><h3>Brahma Duplo Malte</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article><article class="menu-card"><div class="dish-placeholder"><span>Foto futura</span></div><h3>Skol</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article><article class="menu-card"><div class="dish-placeholder"><span>Foto futura</span></div><h3>Original</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article></div></details>
-          <details><summary>Batidas <b>+</b></summary><div class="drink-content item-grid"><article class="menu-card"><div class="dish-placeholder"><span>Foto futura</span></div><h3>Batida</h3><p>Sabores e opções em breve.</p><strong>R$ 29,90</strong></article></div></details>
-          <details><summary>Doses <b>+</b></summary><div class="drink-content"><article class="dose-card"><div><h3>Dose</h3><p>Bebidas disponíveis em breve.</p></div><strong>R$ 29,90</strong></article></div></details>
-        </div></section>
+        <section class="tab-panel panel-bebidas" aria-label="Bebidas"><div class="panel-heading"><p>03</p><h2>Bebidas</h2></div><div id="drink-categories" class="drink-accordions"></div></section>
 
         <section class="tab-panel panel-sobremesas" aria-label="Sobremesas"><div class="panel-heading"><p>04</p><h2>Sobremesas</h2></div><div class="item-grid">
           <article class="menu-card"><div class="dish-placeholder"><span>Foto do prato</span></div><h3>Banana split</h3><p>Descrição em breve.</p><strong>R$ 29,90</strong></article>
@@ -67,5 +58,6 @@
       </div>
     </main>
     <footer class="footer"><div class="shell"><span>Hotel E Restaurante Aquarela</span><span>Peruíbe, São Paulo</span></div></footer>
+    <script src="./menu.js"></script>
   </body>
 </html>
