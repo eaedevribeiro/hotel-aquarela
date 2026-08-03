@@ -5,4 +5,11 @@
 .dose-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 28px; padding: 0 0 22px; }
 .dose-card { padding: 16px 0; }
 .dose-card h3 { font-size: 25px; }
+.panel-cafeteria .item-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 28px; }
+.panel-cafeteria .menu-card { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto auto; align-items: end; gap: 0 16px; padding: 16px 0; border-bottom: 1px dotted #bbb7ac; border-radius: 0; background: transparent; box-shadow: none; }
+.panel-cafeteria .dish-placeholder { display: none; }
+.panel-cafeteria .menu-card h3 { grid-column: 1; margin: 0 0 4px; font-size: 25px; }
+.panel-cafeteria .menu-card p { grid-column: 1; min-height: 0; }
+.panel-cafeteria .menu-card strong { grid-column: 2; grid-row: 1 / span 2; margin: 0; white-space: nowrap; }
 @media (max-width: 600px) { .dose-list { grid-template-columns: 1fr; } }
+@media (max-width: 700px) { .panel-cafeteria .item-grid { grid-template-columns: 1fr; } }
