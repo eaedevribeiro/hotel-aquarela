@@ -12,3 +12,21 @@
 
 /* A foto principal mais seis espaços mantém cada quarto preparado para uma galeria de sete imagens. */
 .photo-space div { grid-template-columns:repeat(3,minmax(0,1fr)); }
+
+@media (max-width:700px) {
+  html { scroll-padding-top:76px; }
+  .topbar { position:sticky; top:0; z-index:10; }
+  .topbar-inner { gap:14px; }
+  .back { min-height:44px; display:flex; align-items:center; }
+  .brand { min-height:44px; display:flex; flex-direction:column; justify-content:center; }
+  .intro > p:last-child { font-size:13px; }
+  .room-card summary { min-height:0; }
+  .room-summary { min-height:260px; }
+  .room-summary > p { font-size:13px; }
+  .room-summary li { font-size:11px; }
+  .room-action { min-height:48px; }
+  .room-details a { min-height:44px; display:inline-flex; align-items:center; }
+  .photo-space i { min-height:62px; font-size:11px; }
+}
+@media (max-width:390px) { .photo-space div { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (prefers-reduced-motion:reduce) { .room-card { transition:none; } }

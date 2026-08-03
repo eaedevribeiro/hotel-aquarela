@@ -3,16 +3,33 @@ const toggle = document.querySelector('.menu-toggle');
 const links = document.querySelector('.nav-links');
 const reservation = document.querySelector('#reservation-form');
 
-window.addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 30), { passive: true });
+const updateHeader = () => header.classList.toggle('scrolled', window.scrollY > 30);
+updateHeader();
+window.addEventListener('scroll', updateHeader, { passive: true });
+
+const closeMenu = () => {
+  links.classList.remove('open');
+  toggle.classList.remove('open');
+  toggle.setAttribute('aria-expanded', 'false');
+  document.body.classList.remove('no-scroll');
+};
+
 toggle.addEventListener('click', () => {
   const isOpen = links.classList.toggle('open');
   toggle.classList.toggle('open', isOpen);
   toggle.setAttribute('aria-expanded', String(isOpen));
   document.body.classList.toggle('no-scroll', isOpen);
+  if (isOpen) links.querySelector('a')?.focus();
 });
 links.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
-  links.classList.remove('open'); toggle.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); document.body.classList.remove('no-scroll');
+  closeMenu();
 }));
+document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && links.classList.contains('open')) { closeMenu(); toggle.focus(); } });
+
+document.querySelectorAll('img').forEach((image, index) => {
+  image.decoding = 'async';
+  if (index > 1) image.loading = 'lazy';
+});
 
 const observer = new IntersectionObserver((entries) => entries.forEach(({ isIntersecting, target }) => {
   if (isIntersecting) { target.classList.add('visible'); observer.unobserve(target); }
@@ -29,7 +46,7 @@ lightbox.querySelector('button').addEventListener('click', closeLightbox);
 lightbox.addEventListener('click', (event) => { if (event.target === lightbox) closeLightbox(); });
 document.addEventListener('keydown', (event) => { if (event.key === 'Escape') closeLightbox(); });
 
-reservation.addEventListener('submit', (event) => {
+reservation?.addEventListener('submit', (event) => {
   event.preventDefault();
   const form = new FormData(reservation); const checkin = new Date(form.get('checkin')); const checkout = new Date(form.get('checkout'));
   const feedback = reservation.querySelector('.form-feedback');

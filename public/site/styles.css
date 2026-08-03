@@ -4,5 +4,30 @@
 @media(max-width:800px){.intro-label{align-items:flex-start}.intro-label .history-date{margin:0 0 0 auto}.history-newspaper{padding-top:8px}.newspaper-frame{max-height:645px}.intro-copy p:nth-of-type(3){margin-top:-8px}}
 
 .review-avatar-placeholder{display:grid!important;place-items:center;background:linear-gradient(145deg,#d9c28b,#98783e)!important;color:#fff!important;object-fit:initial}
+
+/* Ajustes de toque e leitura para celulares. */
+@media (max-width:800px){
+  html{scroll-padding-top:74px}
+  .brand-logo{width:48px;height:48px}.brand-copy small{font-size:6px}.brand-copy strong{font-size:21px}
+  .menu-toggle{min-width:44px;min-height:44px;place-content:center;cursor:pointer}
+  .nav-links{padding:110px 30px 32px;overflow-y:auto;-webkit-overflow-scrolling:touch}
+  .nav-links>a{min-height:44px;display:flex;align-items:center}
+  .nav-book{padding:13px 18px}
+  .hero{min-height:680px;height:100svh}.hero-content{padding-top:max(166px,25svh)}
+  .hero h1{max-width:590px}.hero-description{max-width:340px;margin-top:22px}.hero-actions{margin-top:29px}
+  .button{min-height:46px;padding:14px 17px}.scroll-cue{left:20px}.hero-index{font-size:9px}
+  .section-heading>p,.intro-copy>p,.booking-intro>p:not(.eyebrow),.contact-copy>p:not(.eyebrow){font-size:13px}
+  .experience-card{min-height:132px}.experience-card h3{font-size:29px}
+  .dish,.dish-b,.dish-c{height:clamp(300px,88vw,390px)}
+  .feature-photo{height:clamp(440px,120vw,550px)}.feature-copy{justify-content:flex-end;padding-bottom:58px}
+  .review{padding:27px 23px}.review>p{font-size:23px}.review footer{padding-top:5px}
+  .gallery-grid{gap:10px}.gallery-item{min-height:0}.gallery-item span{font-size:23px;left:14px;bottom:11px}
+  .booking-layout{gap:38px}.booking-form{gap:16px}.booking-form input,.booking-form select{min-height:40px;font-size:16px}
+  .contact-details a{min-height:54px}.map-label{left:12px;right:12px;bottom:12px;padding:12px 14px}.map-label strong{font-size:17px}
+  .whatsapp{width:58px;height:58px;bottom:14px;right:14px}.whatsapp span{display:none}
+  .lightbox{padding:24px 14px}.lightbox button{right:8px;top:4px;min-width:44px;min-height:44px}
+}
+@media (max-width:390px){.hero{min-height:640px}.hero-content{padding-top:154px}.hero h1{font-size:47px}.hero-actions{gap:15px}.button{font-size:9px}.intro h2,.section-heading h2,.reviews h2,.gallery h2,.contact h2{font-size:46px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-image{animation:none}.reveal{opacity:1;transform:none;transition:none}.dish img,.gallery-item img,.button{transition:none}}
 .review footer{display:flex;align-items:center;gap:12px}.review footer>span:last-child{display:grid;gap:1px}.review footer small{color:#7e8790;font-size:10px}.review-avatar{width:42px;height:42px;border-radius:50%;display:grid!important;place-items:center;flex:none;background:linear-gradient(145deg,#d9c28b,#98783e);color:#fff!important;font:600 20px var(--serif);box-shadow:0 0 0 3px #f5f1ea}.gallery-food img{object-position:center 48%}.booking-backdrop{background-image:url('./assets/galeria-2-praia.jpg')}
 .menu-grid-five{grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}.menu-grid-five .dish{height:390px;margin:0}.menu-grid-five .dish-title{font-size:29px;line-height:.9;gap:8px}.menu-grid-five .dish-title i{font-size:18px}.menu-grid-five .dish-number{top:17px;left:17px}.review-avatar{display:block!important;object-fit:cover;object-position:center;background:none;color:transparent!important}@media(min-width:801px) and (max-width:1100px){.menu-grid-five{grid-template-columns:repeat(3,1fr)}.menu-grid-five .dish{height:390px}.menu-grid-five .dish-d,.menu-grid-five .dish-e{height:345px}}@media(max-width:800px){.menu-grid-five .dish{height:390px}.menu-grid-five .dish-title{font-size:33px}}
