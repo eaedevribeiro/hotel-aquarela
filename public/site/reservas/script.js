@@ -13,6 +13,16 @@ const roomMessages = [
 cards.forEach((card, index) => {
   const message = card.querySelector('.room-summary > p');
   if (message) message.textContent = roomMessages[index];
+
+  const gallery = card.querySelector('.photo-space div');
+  if (gallery) {
+    gallery.innerHTML = Array.from({ length: 6 }, (_, photoIndex) =>
+      `<i>Foto ${String(photoIndex + 2).padStart(2, '0')}</i>`
+    ).join('');
+  }
+
+  const galleryNote = card.querySelector('.photo-space > p');
+  if (galleryNote) galleryNote.textContent = 'Este quarto comporta uma galeria com até 7 fotos.';
 });
 
 if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
