@@ -29,5 +29,13 @@
 }
 @media (max-width:390px){.hero{min-height:640px}.hero-content{padding-top:154px}.hero h1{font-size:47px}.hero-actions{gap:15px}.button{font-size:9px}.intro h2,.section-heading h2,.reviews h2,.gallery h2,.contact h2{font-size:46px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-image{animation:none}.reveal{opacity:1;transform:none;transition:none}.dish img,.gallery-item img,.button{transition:none}}
+
+/* No celular, a vitrine inicial do cardápio fica mais objetiva. */
+.whatsapp img{display:block;width:27px;height:27px;object-fit:contain}
+@media (max-width:800px){
+  .menu-grid-five .dish-d,.menu-grid-five .dish-e{display:none}
+  .menu-grid-five{gap:14px}
+  .menu-grid-five .dish{height:clamp(300px,88vw,390px)}
+}
 .review footer{display:flex;align-items:center;gap:12px}.review footer>span:last-child{display:grid;gap:1px}.review footer small{color:#7e8790;font-size:10px}.review-avatar{width:42px;height:42px;border-radius:50%;display:grid!important;place-items:center;flex:none;background:linear-gradient(145deg,#d9c28b,#98783e);color:#fff!important;font:600 20px var(--serif);box-shadow:0 0 0 3px #f5f1ea}.gallery-food img{object-position:center 48%}.booking-backdrop{background-image:url('./assets/galeria-2-praia.jpg')}
 .menu-grid-five{grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}.menu-grid-five .dish{height:390px;margin:0}.menu-grid-five .dish-title{font-size:29px;line-height:.9;gap:8px}.menu-grid-five .dish-title i{font-size:18px}.menu-grid-five .dish-number{top:17px;left:17px}.review-avatar{display:block!important;object-fit:cover;object-position:center;background:none;color:transparent!important}@media(min-width:801px) and (max-width:1100px){.menu-grid-five{grid-template-columns:repeat(3,1fr)}.menu-grid-five .dish{height:390px}.menu-grid-five .dish-d,.menu-grid-five .dish-e{height:345px}}@media(max-width:800px){.menu-grid-five .dish{height:390px}.menu-grid-five .dish-title{font-size:33px}}
