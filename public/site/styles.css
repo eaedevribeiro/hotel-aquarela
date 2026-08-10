@@ -122,3 +122,17 @@
   .menu-grid-five .dish-title{font-size:22px;left:13px;right:13px;bottom:14px}
   .menu-grid-five .dish-number{top:12px;left:13px}
 }
+
+/* Enquadramentos próprios da galeria para desktop e celular. */
+.gallery-item img{filter:saturate(1.04) contrast(1.03)}
+.gallery-room img{object-position:center 52%}
+.gallery-coast img{object-position:center 47%}
+.gallery-restaurant img{object-position:center 62%}
+.gallery-food img{object-position:center 52%}
+
+@media (max-width:800px){
+  .gallery-room img{object-position:center 50%}
+  .gallery-coast img{object-position:center 46%}
+  .gallery-restaurant img{object-position:center 64%}
+  .gallery-food img{object-position:center 54%}
+}
