@@ -127,6 +127,8 @@
 .gallery-item img{filter:saturate(1.04) contrast(1.03)}
 .gallery-room img{object-position:center 52%}
 .gallery-coast img{object-position:center 47%}
+.gallery-room img,.gallery-coast img{transform:scale(1.025);backface-visibility:hidden}
+.gallery-room:hover img,.gallery-coast:hover img{transform:scale(1.045)}
 .gallery-restaurant img{object-position:center 62%}
 .gallery-food img{object-position:center 52%}
 
