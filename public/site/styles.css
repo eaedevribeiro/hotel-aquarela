@@ -78,3 +78,45 @@
     padding:9px 0;
   }
 }
+
+/* Vitrine gastronômica 2026: enquadramento uniforme e tratamento fotográfico. */
+.menu-grid-five .dish{
+  height:auto;
+  aspect-ratio:3 / 4;
+  border-radius:3px 18px 3px 18px;
+  box-shadow:0 16px 34px rgba(5,26,46,.13);
+  background:#d8c8aa;
+}
+.menu-grid-five .dish img{
+  filter:saturate(1.08) contrast(1.05) brightness(.96);
+}
+.menu-grid-five .dish-overlay{
+  background:linear-gradient(0deg,rgba(0,17,29,.82),rgba(0,17,29,.04) 68%);
+}
+.menu-grid-five .dish-a img{object-position:center 52%}
+.menu-grid-five .dish-b img{object-position:center 50%}
+.menu-grid-five .dish-c img{object-position:center 42%}
+.menu-grid-five .dish-d img{object-position:center 48%}
+.menu-grid-five .dish-e img{object-position:center 50%}
+
+@media (max-width:800px){
+  .menu-grid-five .dish-d,
+  .menu-grid-five .dish-e{display:block!important}
+  .menu-grid-five .dish,
+  .menu-grid-five .dish-c{
+    height:auto;
+    aspect-ratio:4 / 5;
+    grid-column:auto;
+  }
+  .menu-grid-five .dish-e{
+    grid-column:1 / -1;
+    aspect-ratio:16 / 9;
+  }
+  .menu-grid-five .dish-title{font-size:clamp(23px,6.5vw,30px)}
+}
+
+@media (max-width:420px){
+  .menu-grid-five{gap:10px}
+  .menu-grid-five .dish-title{font-size:22px;left:13px;right:13px;bottom:14px}
+  .menu-grid-five .dish-number{top:12px;left:13px}
+}
