@@ -91,3 +91,12 @@ target.innerHTML = drinkCategories.map((category) => {
 }).join('');
 
 if (portionTarget) portionTarget.innerHTML = portions.map(portionCard).join('');
+
+function openRequestedCategory() {
+  const categoryId = window.location.hash.slice(1);
+  const category = document.getElementById(categoryId);
+  if (category?.matches('input[name="menu-category"]')) category.checked = true;
+}
+
+openRequestedCategory();
+window.addEventListener('hashchange', openRequestedCategory);
