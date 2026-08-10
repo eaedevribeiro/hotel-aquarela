@@ -97,8 +97,8 @@
 }
 .menu-grid-five .dish-a img{object-position:center 52%}
 .menu-grid-five .dish-b img{object-position:center 50%}
-.menu-grid-five .dish-c img{object-position:center 42%}
-.menu-grid-five .dish-d img{object-position:center 48%}
+.menu-grid-five .dish-c img{object-position:58% 50%}
+.menu-grid-five .dish-d img{object-position:center 54%}
 .menu-grid-five .dish-e img{object-position:center 50%}
 
 @media (max-width:800px){
