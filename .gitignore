@@ -8,3 +8,8 @@ dist/
 package-stage/
 .env*
 !.env.example
+
+# Materiais internos e comerciais (não publicar)
+COMERCIAL/
+MODO_TREINO_AQUARELA.md
+PLANO_COMERCIAL_AQUARELA.md

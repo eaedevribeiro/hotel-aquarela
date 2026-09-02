@@ -1,20 +1,56 @@
 # Hotel & Restaurante Aquarela
 
-Landing page institucional responsiva para o Hotel e Restaurante Aquarela, em Peruíbe – SP.
+Site institucional responsivo criado para apresentar o Hotel e Restaurante Aquarela, um negócio tradicional de frente para o mar em Peruíbe, São Paulo.
 
-## Como abrir
+![Página inicial do Hotel e Restaurante Aquarela](public/site/assets/hero-hotel-aquarela.webp)
 
-Abra o arquivo `index.html` em qualquer navegador moderno.
+## Sobre o projeto
 
-## Estrutura
+O projeto transforma a presença digital do Aquarela em uma experiência clara, elegante e orientada à conversão. A navegação reúne hospedagem, gastronomia, história, avaliações, localização e contato em uma identidade visual inspirada no litoral.
 
-- `index.html` — conteúdo e estrutura da página
-- `styles.css` — identidade visual, responsividade e animações
-- `script.js` — menu mobile, galeria, animações e validação do formulário
-- `cardapio/` — páginas de Entradas, Pratos principais e Doces e drinks
+### Principais entregas
 
-## Próximas substituições
+- página inicial responsiva com apresentação da marca e seus serviços;
+- cardápio digital organizado por categorias;
+- catálogo visual de acomodações;
+- consulta de disponibilidade integrada ao WhatsApp;
+- galeria, avaliações, mapa e canais de contato;
+- cuidados de acessibilidade, semântica e desempenho de imagens;
+- experiência adaptada para celular, tablet e desktop.
 
-O hero já utiliza uma foto oficial do hotel, adaptada para o formato horizontal da página, e a logo oficial está aplicada no cabeçalho e rodapé. A área de cardápio já utiliza as fotos de Entradas, Paella e Caipirinha de banana. Os textos de pratos e valores continuam preparados como conteúdo temporário para a próxima atualização.
+## Tecnologias
 
-O formulário de reserva está pronto no nível de interface. A próxima fase é conectá-lo ao motor de reservas, WhatsApp, e-mail e disponibilidade real.
+- TypeScript e JavaScript
+- React 19 e Next.js 16
+- HTML5 e CSS3
+- Vinext, Vite e Cloudflare Workers
+
+## Executando localmente
+
+Pré-requisito: Node.js 22.13 ou mais recente.
+
+```bash
+npm install
+npm run dev
+```
+
+Para gerar e validar a versão de produção:
+
+```bash
+npm test
+```
+
+## Estrutura principal
+
+```text
+app/                 entrada da aplicação React/Next.js
+public/site/         experiência institucional publicada
+  cardapio/          cardápio digital
+  reservas/          catálogo e consulta de acomodações
+  assets/            imagens otimizadas do projeto
+worker/              integração com Cloudflare Workers
+```
+
+## Contexto profissional
+
+Projeto desenvolvido como solução digital para um negócio real, com foco em identidade de marca, apresentação comercial, responsividade e geração de contatos. O conteúdo e as imagens pertencem ao Hotel e Restaurante Aquarela.
